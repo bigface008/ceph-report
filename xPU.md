@@ -84,7 +84,7 @@ D是Deep Learning的首字母，以Deep Learning开头来命名AI芯片是一种
 
 - 杭州国芯的gxNPU。
 
-- 华为&海思。市场期待华为的麒麟970已经很长时间了，内置的AI加速器被华为称为NPU。已经证实，就是使用了寒武纪的IP。算力是1.92Tflops，实测执行VGG-16模型，麒麟970的性能可以到300 GOPS。业界认定，华为下一代的NN加速器，会用自家开发的IP。并且，各路信息显示，海思的确在专门招纳相关人才。据传，海思的HI3559中使用的就是自己研发的深度学习加速器。
+- 华为&海思。
 
 ### Neural/Neuromorphic Processing Unit
 神经/神经形态处理器。这和上面的神经网络处理器还有所不同。而且，一般也不以“处理器”的名字出现，更多的时候被称为“神经形态芯片（Neuromorphic Chip）”或者是“类脑芯片（Brain-Inspired Chip）”。这类AI芯片不是用CNN、DNN等网络形式来做计算，而是以更类似于脑神经组成结构的SNN（Spiking Neural Network）的形式来进行计算。随便列几个，都不是“xPU”的命名方式。
@@ -97,7 +97,6 @@ D是Deep Learning的首字母，以Deep Learning开头来命名AI芯片是一种
 - Knowm。
 - Koniku。
 - westwell。
-- Neural Network Accelerator。
 
 ## RPU
 ### Ray-tracing Processing Unit
@@ -143,3 +142,6 @@ Intel在数据中心/云计算方面，167亿美金收购的Altera，4亿美金�
 苹果正在研发一款AI芯片，内部称为“苹果神经引擎”(Apple Neural Engine)。
 ### 高通
 高通除了维护其基于Zeroth的软件平台，在硬件上也动作不断。收购NXP的同时，据传高通也一直在和Yann LeCun以及Facebook的AI团队保持合作，共同开发用于实时推理的新型芯片。
+
+## 个人见解
+可以看到许多芯片公司都瞄准了人工智能领域进行发力，同时，应对不同的应用场景还可能有不同的芯片产品。很快又会有激烈的竞争到来啊。
