@@ -16,7 +16,12 @@
 1. _Team leader_ open and accept a pull request to merge "master" <- "dev"
 2. _Team leader_ create a new release on master
 
-## Report of **Storage**, **Network** & **xPU**.
+## Report of **Storage**, **Network** & **xPU**
 - 林义宣 负责 [Storage](./Storage.md)
 - 沈小洲 负责 [Network](./network.md)
 - 汪喆昊 负责 [xPU](./xPU.md)
+
+## Report of Kafka
+- 林义宣 负责 []()
+- 沈小洲 负责 []()
+- 汪喆昊 负责 [Report of setting up Kafka](./kafka/report-of-setting-up-kafka.md)
