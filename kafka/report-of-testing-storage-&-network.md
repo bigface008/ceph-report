@@ -53,7 +53,7 @@ $ iperf3 -c ${服务器IP地址} -b 2G -t 300 -P ${网卡队列数目}
 
 某次测试的证明
 
-![iperf result](../image/kafka-01.png)
+![iperf result](./kafka-01.png)
 
 ### UDP-STREAM 测试
 
@@ -119,6 +119,6 @@ $ hdparm -Tt /dev/sda
 
 某次测试的证明
 
-![hdparm result](../image/kafka-00.png)
+![hdparm result](./kafka-00.png)
 
 以上。
