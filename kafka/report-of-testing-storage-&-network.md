@@ -13,7 +13,7 @@ $ tar xf netperf-2.5.0 && cd netperf-netperf-2.5.0
 $ ./configure && make && make install
 ```
 ### 带宽测试
-首先你需要一台陪练机向测试机发送信息
+首先需要一台陪练机向测试机发送信息
 测试机
 ```shell
 $ iperf3 -s
@@ -27,7 +27,7 @@ $ iperf3 -c ${服务器IP地址} -b 2G -t 300 -P ${网卡队列数目}
     $ iperf3 -c 10.0.0.1 -b 2G -t 300 -P 8
 
 ### UDP-STREAM 测试
-推荐使用一台被测试机器与八台陪练机器进行测试。其中 10.0.0.1 为测试机，10.0.0.2 到 10.0.0.9 作为陪练机。
+文章里推荐使用一台被测试机器与八台陪练机器进行测试。假设其中 10.0.0.1 为测试机，10.0.0.2 到 10.0.0.9 作为陪练机。
 
 测试机
 ```shell
@@ -66,10 +66,9 @@ $ dd if=test.dbf bs=8k count=300000 of=/dev/null
 也可以使用`hdparm`命令来测试
 ```shell
 $ hdparm -Tt /dev/sda
-
-/dev/sda:
-Timing cached reads: 6676 MB in 2.00 seconds = 3340.18 MB/sec
-Timing buffered disk reads: 218 MB in 3.11 seconds = 70.11 MB/sec
 ```
+测试结果如下图
+
+![hdparm result](../image/kafka-00.png)
 
 以上
