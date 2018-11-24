@@ -25,3 +25,4 @@
 - 林义宣 负责 []()
 - 沈小洲 负责 []()
 - 汪喆昊 负责 [Report of setting up Kafka](./kafka/report-of-setting-up-kafka.md)
+[Report of testing storage & network](./kafka/report-of-testing-storage-&-network.md)

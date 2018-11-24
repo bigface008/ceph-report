@@ -42,15 +42,20 @@ $ cd kafka-docker
 ### Enter docker
 使用`sudo docker ps`查看开启的container的列表，选择一个Kafka容器*containter_name*进入：
 ```shell
-$ sudo docker exec -it {container_name} /bin/bash
+$ sudo docker exec -it ${container_name} /bin/bash
 $ cd $KAFKA_HOME/bin
 ```
 ### Create topic
 创建名为test的topic，指定备份数1，分区数1。
-
-    $ ./kafka-topics.sh --create --topic test --zookeeper {container_name}:2181 --replication-factor 1 --partitions 1
+```shell
+$ ./kafka-topics.sh --create --topic test --zookeeper ${container_name}:2181 --replication-factor 1 --partitions 1
+```
 ### Describe topic
-    $ ./kafka-topics.sh --zookeeper {container_name}:2181 --describe --topic test
+```shell
+$ ./kafka-topics.sh --zookeeper ${container_name}:2181 --describe --topic test
+```
 ### Receive topic
-    $ kafka-console-consumer.sh --bootstrap-server wurkafka_kafka_1:9092 --from-beginning --topic test
+```shell
+$ kafka-console-consumer.sh --bootstrap-server wurkafka_kafka_1:9092 --from-beginning --topic test
+```
 以上。
