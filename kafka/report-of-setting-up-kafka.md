@@ -139,3 +139,14 @@ nohup $KAFKA/bin/kafka-server-start.sh $CONF
 其中 `$KAFKA` 为 Kafka 应用目录，`$CONF` 为kafka配置文件 `kafka.cfg` 的路径
 
 最后六个实例会根据文档自动地组成一个Kafka集群
+
+## 创建话题
+
+为了方便后续的测试，利用 `kafka-topics.sh` 创建一个测试用的话题
+
+在其中一台服务器上的 kafka 应用目录内执行
+```
+$ bin/kafka-topics.sh --zookeeper localhost:21800 --create --topic my-test-topic --partitions 3 --replication-factor 3
+```
+
+这条命令创建了名为 `my-test-topic` 的话题。该话题会被分为 3 个 partition。复制因数为 3，即每个 partition 有三个副本，1 个 leader 和 2 个 follower。Kafka集群会对每个broker维护的partition进行平衡
