@@ -25,6 +25,9 @@ $ iperf3 -c ${服务器IP地址} -b 2G -t 300 -P ${网卡队列数目}
 例如
 
     $ iperf3 -c 10.0.0.1 -b 2G -t 300 -P 8
+测试结果如下
+
+![iperf result](../image/kafka-01.png)
 
 ### UDP-STREAM 测试
 文章里推荐使用一台被测试机器与八台陪练机器进行测试。假设其中 10.0.0.1 为测试机，10.0.0.2 到 10.0.0.9 作为陪练机。
@@ -47,8 +50,7 @@ $ ./netperf -H ${被测试机器内网IP地址} -l 300 -t UDP_STREAM -- -m 1 &
 
 ### TCP-RR 测试
 将UDP-STREAM测试中的UDP_STREAM换成TCP_RR即可。陪练机器应该启动多个 netperf 实例（经
-验
-上值总 netperf 实例数至少需要 300 以上），以达到 TCP-RR 极限。
+验上值总 netperf 实例数至少需要 300 以上），以达到 TCP-RR 极限。
 
 ## Storage
 首先了解两个伪设备
