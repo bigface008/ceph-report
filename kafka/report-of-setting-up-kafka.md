@@ -129,13 +129,13 @@ socket.request.max.bytes=104857600
 ```
 nohup $JAVA $CLASS_PATH $MAIN $CONF
 ```
-其中 `$JAVA` 为 java 可执行程序路径，`$CLASS_PATH` 为 zookeeper 应用目录和其子目录，`$MAIN` 为 `org.apache.zookeeper.server.quorum.QuorumPeerMain` 即 zookeeper 服务器的主类，`$CONF` 为 zookeeper 配置文件 _zoo.cfg_ 的路径
+其中 `$JAVA` 为 java 可执行程序路径，`$CLASS_PATH` 为 zookeeper 应用目录和其子目录，`$MAIN` 为 `org.apache.zookeeper.server.quorum.QuorumPeerMain` 即 zookeeper 服务器的主类，`$CONF` 为 zookeeper 配置文件 `zoo.cfg` 的路径
 
 之后再启动三个 broker 实例
 
 ```
 nohup $KAFKA/bin/kafka-server-start.sh $CONF
 ```
-其中 `KAFKA` 为 Kafka 应用目录，`$CONF` 为kafka配置文件 _kafka.cfg_的路径
+其中 `$KAFKA` 为 Kafka 应用目录，`$CONF` 为kafka配置文件 `kafka.cfg` 的路径
 
 最后六个实例会根据文档自动地组成一个Kafka集群
