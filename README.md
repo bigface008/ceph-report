@@ -28,7 +28,7 @@
 - 汪喆昊 负责 [xPU](./ceph/xPU.md)
 
 ## Report of Kafka
-- 林义宣 负责 []()
-- 沈小洲 负责 []()
-- 汪喆昊 负责 [Report of setting up Kafka](./kafka/report-of-setting-up-kafka.md)
-[Report of testing storage & network](./kafka/report-of-testing-storage-&-network.md)
+- [Report of testing storage & network](./kafka/report-of-testing-storage-&-network.md) 由 汪喆昊 编写
+- [Report of setting up Kafka](./kafka/report-of-setting-up-kafka.md) 由 沈小洲、汪喆昊 编写
+- [Report of experiment to quantitative analyzing](./kafka/report-of-experiment.md) 由 林义宣 编写
+- [Code of comsumer and producer](./kafka/code/README.md) 由 沈小洲 编写
