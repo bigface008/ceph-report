@@ -146,7 +146,9 @@ nohup $KAFKA/bin/kafka-server-start.sh $CONF
 
 在其中一台服务器上的 kafka 应用目录内执行
 ```
-$ bin/kafka-topics.sh --zookeeper localhost:21800 --create --topic my-test-topic --partitions 3 --replication-factor 3
+$ bin/kafka-topics.sh --zookeeper localhost:21800 --create --topic topic-p-12 --partitions 12 --replication-factor 3
 ```
 
-这条命令创建了名为 `my-test-topic` 的话题。该话题会被分为 3 个 partition。复制因数为 3，即每个 partition 有三个副本，1 个 leader 和 2 个 follower。Kafka集群会对每个broker维护的partition进行平衡
+这条命令创建了名为 `topic-p-12` 的话题。该话题会被分为 12 个 partition。复制因数为 3，即每个 partition 有三个副本(1 leader, 2 followers)。Kafka集群会对每个broker维护的partition进行平衡。
+
+需要注意的是，同一时间同一个group中consumer的数量不能超过partition的数量，否则会有部分consumer收不到消息。
