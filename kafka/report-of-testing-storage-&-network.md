@@ -44,7 +44,7 @@ $ iperf3 -c ${服务器IP地址} -b 2G -t 300 -P ${网卡队列数目}
 
 某次测试的结果（作为证明）
 
-![iperf result](./images/kafka-01.png)
+![iperf result](./image/kafka-01.png)
 
 针对本次作业，使用 iperf3，在服务器之间发送数据，测量相应带宽。测试结果如下
 
@@ -95,7 +95,7 @@ $ hdparm -Tt /dev/sda
 
 某次测试的证明
 
-![hdparm result](./images/kafka-00.png)
+![hdparm result](./image/kafka-00.png)
 
 测试结果如下
 
