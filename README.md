@@ -35,3 +35,4 @@
 
 ## Report of Final Homework
 - [Report of Requirement 2](./kubernetes/requirement2.md) 由 汪喆昊 编写
+- [Report of Requirement 1](./kubernetes/requirement1.md) 由 林义宣 编写
